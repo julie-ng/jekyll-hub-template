@@ -1,0 +1,15 @@
+---
+layout: default
+title: Project Hub Jekyll Template
+---
+
+<section class="entries">
+  {% for post in site.posts %}
+    <article class="entry{% if post.future %} is-future{% endif %}">
+      <h1 class="entry-title">{{ post.title }}</h1>
+      <p class="entry-date">{{ post.date | date_to_string}}</p>
+      {{ post.content }}
+    </article>
+  {% endfor %}
+</section>
+

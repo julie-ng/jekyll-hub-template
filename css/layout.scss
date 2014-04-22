@@ -1,0 +1,53 @@
+
+//-- variables --
+$headerWidth: 350px;
+$buffer: 48px;
+
+.site-header {
+  position: fixed;
+  float: left;
+  width: $headerWidth;
+  padding: 4em 0 0 2em;
+  box-sizing: border-box;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.2em;
+    color: #888;
+  }
+}
+
+.site-content {
+  max-width: 800px;
+  padding-top: 4em;
+  margin-bottom: 4em;
+  margin-left: $headerWidth + $buffer;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+  .site-header {
+    position: relative;
+    float: none;
+    width: 100%;
+    padding: 0 2em 2em;
+    border-bottom: 3px solid #ccc;
+    background-color: #f1f2f3;
+
+    h1 {
+      margin-top: 0;
+      padding-top: 1em;
+    }
+  }
+  .site-content {
+    margin: 0 1.5em 0 2em;
+    padding-top: 2em;
+
+  }
+}
