@@ -2,3 +2,5 @@ name: Client Name
 description: Description of client project (Spring 2014)
 markdown: redcarpet
 pygments: true
+
+baseurl: /jekyll-hub-template
