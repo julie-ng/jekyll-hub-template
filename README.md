@@ -56,9 +56,15 @@ To mark a post as a future, i.e. *not-yet-completed* phase, include the `future`
     future: true
     ---
 
+## Demo
+
+<img src="https://jng5.github.io/jekyll-hub-template/images/template-large.png" alt="Template preview: desktop" style="height:200px;">
+
+Project demo: 
+[http://jng5.github.io/jekyll-hub-template/](http://jng5.github.io/jekyll-hub-template/)
+
 
 ## Misc.
-
 
 ### Why another project hub project?
 
