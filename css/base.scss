@@ -21,3 +21,13 @@ a:link, a:visited {
 a:hover, a:active {
   color: #B54546;
 }
+
+
+p {
+  code {
+    display: inline-block;
+    background-color: #f1f2f3;
+    padding: 0 .5em;
+    font-weight: 300;
+  }
+}
