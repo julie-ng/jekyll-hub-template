@@ -4,12 +4,12 @@ title: Project Hub Jekyll Template
 ---
 
 <section class="entries">
-  {% for post in site.posts %}
-    <article class="entry{% if post.future %} is-future{% endif %}">
-      <h1 class="entry-title">{{ post.title }}</h1>
-      <p class="entry-date">{{ post.date | date_to_string}}</p>
-      {{ post.content }}
+  {% assign sorted = (site.posts | sort: 'date') | sort %}
+  {% for item in sorted %}
+    <article class="entry{% if item.future %} is-future{% endif %}">
+      <h1 class="entry-title">{{ item.title }}</h1>
+      <p class="entry-date">{{ item.date | date_to_string}}</p>
+      {{ item.content }}
     </article>
   {% endfor %}
 </section>
-
